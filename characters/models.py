@@ -13,7 +13,7 @@ class Character(models.Model):
         GENDERLESS = "Genderless"
         UNKNOWN = "unknown"
 
-    api_id = models.IntegerField
+    api_id = models.IntegerField()
     name = models.CharField(max_length=255)
     status = models.CharField(max_length=50, choices=StatusChoices.choices)
     species = models.CharField(max_length=255)
